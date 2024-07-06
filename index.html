@@ -17,7 +17,7 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0 section-title">Refúgio dos Livros</h1>
+            <h1 class="navbar-brand m-0">Refúgio dos Livros</h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,25 +105,34 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-4">
-                        <img src="./images/lançamentos/colecao.webp" alt="Coleção Medo Clássicos - Edgar Allan Poe" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">Coleção Medo Clássicos - Edgar Allan Poe</h3>
+                        <img src="./images/lançamentos/medo.webp" alt="Coleção Medo Clássicos - Edgar Allan Poe" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">Coleção Medo Clássicos - Edgar Allan Poe</h3>
                         <h5>R$ 84,90</h5>
+                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                        <i class="fs-3 text-colored bi bi-heart"></i>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis eius natus voluptates iure eum? Nihil, iusto eius facilis iste odio magnam provident ratione sapiente, nesciunt, ut voluptates at repudiandae laudantium.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="./images/lançamentos/medo.webp" alt="Coleção C. S. Lewis Clássicos - 30 Volumes" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">Coleção C. S. Lewis Clássicos - 30 Volumes</h3>
+                        <img src="./images/lançamentos/colecao.webp" alt="Coleção C. S. Lewis Clássicos - 30 Volumes" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">Coleção C. S. Lewis Clássicos - 30 Volumes</h3>
                         <h5>R$ 34,90</h5>
+                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                        <i class="fs-3 text-colored bi bi-heart"></i>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis eius natus voluptates iure eum? Nihil, iusto eius facilis iste odio magnam provident ratione sapiente, nesciunt, ut voluptates at repudiandae laudantium.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <img src="./images/lançamentos/shopping.webp" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">É Assim Que Começa - Collen Hoover</h3>
+                        <img src="./images/lançamentos/e-assim-q-acaba.webp" alt="É Assim Que Começa - Collen Hoover" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">É Assim Que Começa - Collen Hoover</h3>
                         <h5>R$ 44,90</h5>
+                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                        <i class="fs-3 text-colored bi bi-heart"></i>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis eius natus voluptates iure eum? Nihil, iusto eius facilis iste odio magnam provident ratione sapiente, nesciunt, ut voluptates at repudiandae laudantium.
                         </p>
@@ -131,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="pt-5 pb-5" id="cardapio">
+        <section class="pt-5 pb-5" id="produtos">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center mb-5">Nossos <span class="text-colored">produtos</span>
@@ -139,83 +148,116 @@
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bold text-start nav-link text-colored active">Terror</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Romance</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Fantasia</button>
+                        <nav class="nav nav-pills flex-column nav-produtos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#terror" class="fw-bold text-start nav-link text-colored active">Terror</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#romance" class="fw-bold text-start nav-link text-colored">Romance</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#fantasia" class="fw-bold text-start nav-link text-colored">Fantasia</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
                         <div class="tab-content">
-                            <div class="tab-pane active" id="bebidas-sem-alcool">
+                            <div class="tab-pane active" id="terror">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/bebidas/it.jpg" alt="Coca-Cola">
-                                        <h5 class="fw-bold text-colored mt-2">Coca-Cola</h5>
+                                        <img class="d-block w-100" src="./images/produtos/terror/horror.jpg" alt="Remanso do Horror - O Casal Espectral">
+                                        <h3 class="fw-bold text-colored mt-2">Remanso do Horror - O Casal Espectral</h3>
+                                        <h5>R$ 24,90</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/bebidas/tel.webp" alt="Suco">
-                                        <h5 class="fw-bold text-colored mt-2">Suco de Laranja</h5>
+                                        <img class="d-block w-100" src="./images/produtos/terror/it.jpg" alt="It A Coisa - Stephen King">
+                                        <h3 class="fw-bold text-colored mt-2">It A Coisa - Stephen King</h3>
+                                        <h5>R$ 85,60</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/bebidas/terror.jpg" alt="Coca-Cola">
-                                        <h5 class="fw-bold text-colored mt-2">Coca-Cola</h5>
+                                        <img class="d-block w-100" src="./images/produtos/terror/telefone-preto.webp" alt="Coca-Cola">
+                                        <h3 class="fw-bold text-colored mt-2">O Telefone Preto e Outras Histórias - Joe Hill</h3>
+                                        <h5>R$ 92,50</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="bebidas-alcoolicas">
+                            <div class="tab-pane" id="romance">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/entradas/shopping (1).jpg" alt="Cerveja">
-                                        <h5 class="fw-bold text-colored mt-2">Cerveja</h5>
+                                        <img class="d-block w-100" src="./images/produtos/romance/blackout.jpg" alt="Blackout">
+                                        <h3 class="fw-bold text-colored mt-2">Blackout</h3>
+                                        <h5>R$ 45,90</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/entradas/shopping (3).webp" alt="Vinho">
-                                        <h5 class="fw-bold text-colored mt-2">Vinho</h5>
+                                        <img class="d-block w-100" src="./images/produtos/romance/nao-me-esqueca.jpg" alt="Não Me Esqueça">
+                                        <h3 class="fw-bold text-colored mt-2">Não Me Esqueça - Juie Soto</h3>
+                                        <h5>R$ 30,00</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/entradas/shopping.jpg" alt="Vinho">
-                                        <h5 class="fw-bold text-colored mt-2">Vinho</h5>
+                                        <img class="d-block w-100" src="./images/produtos/romance/o-mar-me-levou-a-voce.webp" alt="O Mar Me Levou A Você">
+                                        <h3 class="fw-bold text-colored mt-2">O Mar Me Levou A Você</h3>
+                                        <h5>R$ 35,80</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane" id="entradas">
+                            <div class="tab-pane" id="fantasia">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/pratos/shopping (1).jpg" alt="Nome da Entrada">
-                                        <h5 class="fw-bold text-colored mt-2">Nome da Entrada</h5>
+                                        <img class="d-block w-100" src="./images/produtos/fantasia/divina-comedia.jpg" alt="A Divina Comédia de Dante">
+                                        <h3 class="fw-bold text-colored mt-2">A Divina Comédia de Dante</h3>
+                                        <h5>R$ 65,70</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/pratos/shopping.jpg" alt="Nome da Entrada">
-                                        <h5 class="fw-bold text-colored mt-2">Nome da Entrada</h5>
+                                        <img class="d-block w-100" src="./images/produtos/fantasia/senhor-dos-aneis.jpg" alt="Senhor dos Anéis">
+                                        <h3 class="fw-bold text-colored mt-2">Senhor dos Anéis</h3>
+                                        <h5>R$ 159,99</h5>
+                                        <button type="submit" id="comprar" class="btn fw-bold">Comprar</button>
+                                        <i class="fs-2 ms-1 me-1 text-colored bi bi-cart2"></i>
+                                        <i class="fs-3 text-colored bi bi-heart"></i>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img class="d-block w-100" src="./images/cardapio/pratos/shopping (2).jpg" alt="Nome da Entrada">
-                                        <h5 class="fw-bold text-colored mt-2">Nome da Entrada</h5>
+                                        <img class="d-block w-100" src="./images/produtos/fantasia/herois-do-olimpo.jpg" alt="heróis do Olimpo">
+                                        <h3 class="fw-bold text-colored mt-2">Heróis do Olimpo</h3>
+                                        <h5>R$ 70,90</h5>
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         </p>

@@ -61,6 +61,11 @@ body{
     text-decoration: none;
 }
 
+#comprar{
+    background-color: #4941e1;
+    color: #fff;
+}
+
 @media (max-width: 767px) {
     .carousel-item img{
         height: 280px;
